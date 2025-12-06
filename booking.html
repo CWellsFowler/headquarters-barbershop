@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headquarters Barbershop | Book an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Headquarters Barbershop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services & Pricing</a>
+        <a href="barbers.html">Barbers</a>
+        <a href="booking.html">Book Now</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2 class="section-title">Book an Appointment</h2>
+    <p>Fill out the form below to request a time. You’ll receive a confirmation message once your appointment is approved.</p>
+
+    <form id="booking-form">
+        <div class="form-row">
+            <div>
+                <label for="fullName">Full name *</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="phone">Mobile phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="service">Service *</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select service --</option>
+                    <option value="Classic Haircut">Classic Haircut</option>
+                    <option value="Beard Trim">Beard Trim</option>
+                    <option value="Combo Cut & Beard">Combo Cut & Beard</option>
+                    <option value="Kids Cut">Kids Cut</option>
+                    <option value="Hot Towel Shave">Hot Towel Shave</option>
+                </select>
+            </div>
+            <div>
+                <label for="barber">Preferred barber *</label>
+                <select id="barber" name="barber" required>
+                    <option value="">-- Any barber --</option>
+                    <option value="Sean">Sean</option>
+                    <option value="Jay">Jay</option>
+                    <option value="Tia">Tia</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Time *</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </div>
+
+        <label for="notes">Notes / style inspiration (optional)</label>
+        <textarea id="notes" name="notes" placeholder="Example: low skin fade with beard; bring back waves."></textarea>
+
+        <button type="submit" class="btn" style="margin-top:1rem;">Submit Request</button>
+
+        <p id="booking-error" class="error"></p>
+        <p id="booking-summary" style="margin-top:0.75rem;"></p>
+    </form>
+</main>
+
+<footer>
+    <p>Headquarters Barbershop · Booking powered by simple JavaScript validation.</p>
+</footer>
+</body>
+</html>

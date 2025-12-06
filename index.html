@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- COP2822C Website Project Part 3 - Home Page -->
+    <meta charset="UTF-8">
+    <title>Headquarters Barbershop | Home</title>
+
+    <!-- External CSS file for consistent design and typography -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- External JavaScript for form logic on other pages -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Site header and main navigation (appears on every page) -->
+    <header>
+        <!-- Logo banner for site branding -->
+    <div class="logo-banner">
+        <div class="logo-circle" aria-hidden="true">HQ</div>
+        <div class="logo-text">
+            <h1 class="shop-name">Headquarters Barbershop</h1>
+            <span class="tagline">Fresh cuts. Clean fades. HQ energy.</span>
+        </div>
+    </div>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services &amp; Pricing</a>
+            <a href="barbers.html">Barbers</a>
+            <a href="booking.html">Book Now</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="container">
+        <!-- Hero section with intro text and featured image -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Fresh cuts. Clean fades. HQ energy.</h2>
+                <p>
+                    Welcome to Headquarters Barbershop – Jacksonville’s home for precision
+                    fades, sharp lineups, beard care, and family-friendly grooming.
+                </p>
+                <a href="booking.html" class="btn">Book an Appointment</a>
+            </div>
+
+            <!-- Alt text describes the image content for screen readers -->
+            <img src="IMG_0194.jpg"
+                 alt="Young client with a fresh fade haircut at Headquarters Barbershop">
+        </section>
+
+        <!-- Service overview cards -->
+        <section aria-labelledby="top-services-heading">
+            <h3 id="top-services-heading" class="section-title">Top Services</h3>
+            <div class="cards">
+                <article class="card">
+                    <h3>Classic Haircut</h3>
+                    <p>Clean taper or even cut with razor-sharp lineup.</p>
+                    <p><strong>From $30 · 45 min</strong></p>
+                </article>
+                <article class="card">
+                    <h3>Beard Trim &amp; Shape</h3>
+                    <p>Precision beard sculpting with oil finish.</p>
+                    <p><strong>From $20 · 25 min</strong></p>
+                </article>
+                <article class="card">
+                    <h3>Kids Cut</h3>
+                    <p>Fresh styles for the little kings and queens.</p>
+                    <p><strong>From $20 · 30 min</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About/why section -->
+        <section aria-labelledby="why-heading">
+            <h3 id="why-heading" class="section-title">Why Headquarters?</h3>
+            <p>
+                Our licensed barbers combine professional technique with a chill,
+                welcoming vibe. Book online, pull up, relax, and walk out ready for the
+                boardroom, date night, or game day.
+            </p>
+        </section>
+
+        <!-- Video element - satisfies multimedia requirement -->
+        <section aria-labelledby="video-heading">
+            <h3 id="video-heading" class="section-title">Shop Tour (Video)</h3>
+            <p>Replace the sample video file with your own MP4 when available.</p>
+            <video controls width="100%">
+                <!-- Placeholder video source -->
+                <source src="videos/hq-shop-tour.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Audio element - satisfies multimedia requirement -->
+        <section aria-labelledby="audio-heading">
+            <h3 id="audio-heading" class="section-title">HQ Vibes (Audio)</h3>
+            <p>Sample background instrumental used during shop hours.</p>
+            <audio controls>
+                <source src="audio/hq-vibes.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <!-- Footer appears on each page -->
+    <footer>
+        <p>Headquarters Barbershop · 123 Fade Lane · Jacksonville, FL</p>
+        <p>Open Tue–Sat · 9:00 AM – 7:00 PM</p>
+    </footer>
+</body>
+</html>
